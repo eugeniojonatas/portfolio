@@ -154,23 +154,47 @@ a:hover {
   text-decoration: underline;
 }
 
-figure {
+.avatar-placeholder {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2b224d, #17122b);
+  border: 2px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 20px 0;
-  display: inline-block;
+  color: var(--primary-light);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.2);
 }
 
-figure img {
-  border-radius: 12px;
-  border: 2px solid var(--border-color);
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 20px 0;
+}
+
+.tags li {
   background-color: var(--bg-card);
-  padding: 4px;
-  display: block;
+  border: 1px solid var(--border-color);
+  color: var(--primary-light);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin: 0;
+  transition: all 0.2s ease;
 }
 
-figcaption {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-top: 6px;
+.tags li:hover {
+  border-color: var(--primary);
+  color: var(--text-main);
 }
 
 article {
