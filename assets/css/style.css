@@ -154,6 +154,22 @@ a:hover {
   text-decoration: underline;
 }
 
+.profile-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.profile-info h1 {
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  margin-bottom: 0;
+}
+
 .avatar-placeholder {
   width: 90px;
   height: 90px;
@@ -163,7 +179,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  margin: 0;
   color: var(--primary-light);
   font-family: var(--font-heading);
   font-size: 2rem;
@@ -364,5 +380,12 @@ footer {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .profile-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    gap: 16px;
   }
 }
