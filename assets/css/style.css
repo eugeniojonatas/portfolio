@@ -294,3 +294,39 @@ footer {
   color: var(--text-muted);
   background-color: var(--bg-card);
 }
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 110px;
+  }
+
+  nav ul {
+    gap: 8px;
+    padding: 12px 10px;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+
+  main {
+    padding: 20px 14px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  article {
+    padding: 18px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
