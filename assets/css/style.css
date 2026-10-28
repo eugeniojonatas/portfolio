@@ -187,6 +187,16 @@ a:hover {
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.2);
 }
 
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.2);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
